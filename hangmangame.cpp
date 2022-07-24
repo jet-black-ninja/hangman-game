@@ -17,10 +17,7 @@ cout<<" Ok now that the players "<<player1<<" and "<< player2<<" are here, Lets 
 cout<<player1<<" enter the word you want "<< player2<< " to guess\n";
 cin>>word;
 //hide the word
-do{
-    cout<<endl;
-    i++;
-}while(i<50);
+system("CLS");
 l=word.size();
 //underscore
 while(underscore.size()!=word.size()){
@@ -41,7 +38,7 @@ while(wrong<12){
         }
     }
     if(isUsed){
-        cout<<"The Letter"<<guess <<"has already been used\n";
+        cout<<"The Letter "<<guess <<" has already been used\n";
         goto start;
     }
     storage.push_back(guess); // vector of used guesses
